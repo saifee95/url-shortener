@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h3>User Stories</h3>
+    <ul>1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</ul>
+    <ul>2) When I visit that shortened URL, it will redirect me to my original link.</ul>
+    <ul>3)  If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</ul>
+
+    <h3>Example usage:</h3>
+    <code>https://urltiny.herokuapp.com/short/https://www.google.com</code>
+    <br>
+    <h3>Example output:</h3>
+    <code>
+    	
+        { "original_url": "https://www.google.com", "short_url": "https://urltiny.herokuapp.com/3" }
+           
+    </code>
+    <h3>Use</h3>
+    <code>https://urltiny.herokuapp.com/3</code>
+    <h3>The above link will redirect to</h3>
+    <code>https://www.google.com</code>
+  </body>
+</html>
